@@ -21,78 +21,81 @@
 
   <div class="wrapper">
     <header class="pb3">
-      <h1 class="m0">
-        <span class="logo-em -grad">〰</span>
-        <span class="h">pisces</span>
-        <span class="version h4 hide">v0.0.0</span>
-        <div class="inline-block clearfix">
-          <a href="#" class="js-share-twitter inline-block left m0 mr1" target="_blank" title="Share on Twitter">
+      <div class="flex flex-wrap items-baseline">
+        <h1 class="m0 center-align mr2">
+          <span class="logo-em -grad">〰</span>
+          <span class="h">pisces</span>
+        </h1>
+        <span class="version h4 hide mr2 pb2">v0.0.19</span>
+        <div class="pb2">
+          <a href="#" class="js-share-twitter inline-block mr1" target="_blank" title="Share on Twitter">
             <svg class="share-icon"><use xlink:href="#svg-twitter-circle"></use></svg>
           </a>
           <a href="#" class="js-share-facebook inline-block" target="_blank" title="Share on Facebook">
             <svg class="share-icon"><use xlink:href="#svg-facebook-circle"></use></svg>
           </a>
         </div>
-      </h1>
+      </div>
       <h2 class="m0 -grad">Scroll to locations of any scrolling box in a smooth fashion.</h2>
-      <!-- <a href="https://www.npmjs.com/package/pisces"> -->
-      <!--   <img src="https://img.shields.io/npm/v/pisces.svg?style=flat-square" alt="npm-version"> -->
-      <!-- </a> -->
     </header>
 
     <main>
       <div>
         <h3 class="m0 h">Demo</h3>
 
-        <form id="demo-form" action="" class="pt2 pb3 flex flex-wrap">
-          <label class="inline-block pr2">
-            <span>Scroll to</span>
-            <div class="select">
-              <select id="scroll-to-option">
-                <option value="element">Element</option>
-                <option value="position">Position</option>
-                <option value="scrollToTop">Top</option>
-                <option value="scrollToRight">Right</option>
-                <option value="scrollToBottom">Bottom</option>
-                <option value="scrollToLeft">Left</option>
-              </select>
-            </div>
-          </label>
-
-          <div id="elements-select-wrapper" class="inline-block pr2">
-            <label class="inline-block">
-              <span>Item</span>
-              <input id="scroll-to-element" class="input center" type="number" min="1" max="50" placeholder="15">
-            </label>
-          </div>
-
-          <div id="coords-input-wrapper" style="display: none;" class="inline-block pr2">
+        <form id="demo-form" action="" class="sm-flex flex-wrap pt2 pb2">
+          <div class="pb2 pr1">
             <label class="inline-block pr1">
-              <span>X</span>
-              <input id="coord-x" class="input center" type="text" value="+100">
+              Scroll to
+              <div class="select">
+                <select id="scroll-to-option">
+                  <option value="element">Element</option>
+                  <option value="position">Position</option>
+                  <option value="scrollToTop">Top</option>
+                  <option value="scrollToRight">Right</option>
+                  <option value="scrollToBottom">Bottom</option>
+                  <option value="scrollToLeft">Left</option>
+                </select>
+              </div>
             </label>
-            <label class="inline-block">
-              <span>Y</span>
-              <input id="coord-y" class="input center" type="text" value="150">
-            </label>
+
+            <div id="elements-select-wrapper" class="inline-block">
+              <label class="inline-block">
+                Item
+                <input id="scroll-to-element" class="input center" type="number" min="1" max="100" placeholder="15">
+              </label>
+            </div>
+
+            <div id="coords-input-wrapper" style="display: none;" class="inline-block">
+              <label class="inline-block">
+                X
+                <input id="coord-x" class="input center" type="text" value="+100">
+              </label>
+              <label class="inline-block">
+                Y
+                <input id="coord-y" class="input center" type="text" value="150">
+              </label>
+            </div>
           </div>
 
-          <label class="inline-block pr2">
-            <span>Easing</span>
-            <div class="select">
-              <select id="easing-option">
-                <option value="default">Default</option>
-              </select>
-            </div>
-          </label>
+          <div>
+            <label class="inline-block pr2 pb2">
+              Easing
+              <div class="select">
+                <select id="easing-option">
+                  <option value="default">Default</option>
+                </select>
+              </div>
+            </label>
 
-          <label class="inline-block pr2">
-            <span>Duration</span>
-            <input id="duration-option" type="text" class="input center" value="600">
-            <span class="h">ms</span>
-          </label>
+            <label class="inline-block pr2 pb2">
+              Duration
+              <input id="duration-option" type="number" class="input center" value="600" min="0" max="100000">
+              <span class="h">ms</span>
+            </label>
 
-          <button class="button px2 border-none">Go!</button>
+            <button class="button px2 border-none">Go!</button>
+          </div>
         </form>
 
         <div class="demo-scrolling-box relative">
@@ -158,13 +161,68 @@
               <li></li>
               <li></li>
               <li></li>
+
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="item-55"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="item-65"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="item-75"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="item-85"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="item-95"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="flex py3">
+    <footer class="sm-flex py3">
       <div class="flex flex-auto">
         <span class="m0 pr2 -grad">License MIT</span>
         <span class="version h4 hde pr2 -grad">v0.0.0</span>

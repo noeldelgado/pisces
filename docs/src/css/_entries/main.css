@@ -2,6 +2,8 @@
 /* @import "normalize.css"; */
 @import "basscss";
 @import "gemini-scrollbar/gemini-scrollbar.css";
+@import "./../vendor/github-corner";
+@import "./../vendor/gemini-scrollbar";
 @import "./../components/select";
 @import "./../components/input";
 @import "./../components/button";
@@ -17,8 +19,8 @@
   /* --secondary: rgb(74, 197, 195); */
   /* --accent: #CE40AA; */
 
-  --ui-height: 30px;
-  --ui-radius: 2px;
+  --ui-height: 48px;
+  --ui-radius: 3px;
 
   /* --foreground: #84d8fd; */
   /* --secondary: #fe879f; */
@@ -36,9 +38,9 @@
   /* --foreground: #fff; */
   /* --background: #000; */
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.618;
-  font-family: Helvetica Neue,Helvetica,sans-serif;
+  font-family: system-ui;
 }
 
 * {
@@ -54,12 +56,12 @@ body {
 
 a {color: var(--secondary)}
 
-h1 {font-size: 6rem}
+h1 {font-size: 4.5rem}
 h2 {font-size: 2rem}
-h3 {font-size: 1.2rem}
+h3 {font-size: 1.25rem}
 
 .wrapper {
-  width: 85%;
+  width: 90%;
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -81,11 +83,11 @@ h3 {font-size: 1.2rem}
 }
 
 .demo-scrolling-box {
-  background-color: color(var(--background) shade(10%));
+  background-color: color(var(--background) shade(14%));
   box-shadow:
-    0 0 0 1px color(var(--background) tint(6%)),
+    0 0 0 1px color(var(--foreground) shade(20%)),
     0 20px 40px color(var(--background) shade(30%));
-  color: color(var(--background) tint(10%));
+  color: color(var(--background) tint(50%));
   border-radius: 2px;
   overflow: auto;
   height: 500px;
@@ -99,7 +101,7 @@ h3 {font-size: 1.2rem}
     float: left;
     width: 200px;
     height: 150px;
-    border: 1px solid color(var(--background) tint(6%));
+    border: 1px solid color(var(--foreground) shade(60%));
 
     &::before {
       counter-increment: items;
@@ -111,44 +113,4 @@ h3 {font-size: 1.2rem}
       text-align: center;
     }
   }
-}
-
-.gm-scrollbar {
-  right: 4px;
-  bottom: 4px;
-
-  &.-vertical {top: 4px}
-  &.-horizontal {left: 4px}
-
-  & .thumb {
-    background-color: color(var(--background) tint(6%));
-
-    &:hover,
-    &:active {background-color: color(var(--background) tint(10%))}
-  }
-}
-
-.github-corner {
-  position: fixed;
-  top: 0;
-  right: 0;
-
-  & > svg {
-    display: block;
-    border: 0;
-    fill: var(--secondary);
-    color: var(--background);
-  }
-
-  &:hover .octo-arm {animation: octocat-wave 560ms ease-in-out}
-}
-
-@keyframes octocat-wave{
-  0%, 100% {transform:rotate(0)}
-  20%, 60% {transform:rotate(-25deg)}
-  40%, 80% {transform:rotate(10deg)}
-}
-@media (max-width:500px) {
-  .github-corner:hover .octo-arm{animation:none}
-  .github-corner .octo-arm {animation:octocat-wave 560ms ease-in-out}
 }

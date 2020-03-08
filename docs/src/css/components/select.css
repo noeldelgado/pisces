@@ -5,7 +5,8 @@
 }
 
 select {
-  padding: 0 2rem 0 1rem;
+  font: inherit;
+  padding: 0 2em 0 1em;
   width: 100%;
   height: var(--ui-height);
   color: inherit;
@@ -16,7 +17,6 @@ select {
     0 20px 40px color(var(--background) shade(40%));
   text-shadow: 0 -1px 0 #000;
   border-radius: var(--ui-radius);
-  outline: none;
   cursor: pointer;
   appearance: none;
 }
@@ -29,8 +29,4 @@ select {
   right: 1rem;
   line-height: var(--ui-height);
   pointer-events: none;
-}
-
-select:focus {
-  box-shadow: 0 0 5px 0 var(--foreground);
 }

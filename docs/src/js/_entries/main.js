@@ -26,8 +26,7 @@ versionElement = null;
 const scrollingBox = document.querySelector('.demo-scrolling-box');
 const gemini = new Gemini({
   element: scrollingBox,
-  createElements: false,
-  autoshow: 1
+  createElements: false
 }).create();
 const pisces = new Pisces(gemini.getViewElement());
 

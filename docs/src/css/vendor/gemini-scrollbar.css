@@ -1,0 +1,14 @@
+.gm-scrollbar {
+  right: 4px;
+  bottom: 4px;
+
+  &.-vertical {top: 4px}
+  &.-horizontal {left: 4px}
+
+  & .thumb {
+    background-color: var(--secondary);
+
+    &:hover,
+    &:active {background-color: color(var(--secondary) tint(30%))}
+  }
+}
